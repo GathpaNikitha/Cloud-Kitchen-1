@@ -14,8 +14,10 @@ service nnrg @(requires: 'authenticated-user') {
     BaseUnit,
     ProductGroup,
     to_Description,
-    null as ProductDescription: String(80)
+   
   }
+  entity ProductLocal as projection on db.ProductLocal;
 }
 
 annotate nnrg.kitchen with @odata.draft.enabled;
+annotate nnrg.ProductLocal with @odata.draft.enabled;
