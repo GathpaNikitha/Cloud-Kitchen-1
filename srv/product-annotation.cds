@@ -1,6 +1,6 @@
-using{nnrg.ProductLocal as Product} from './cloudkitchen';
+using {nnrg.ProductLocal as Product} from './cloudkitchen';
 
-annotate Product with @(
+annotate nnrg.ProductLocal with @(
     UI.LineItem:[
         {
             $Type:'UI.DataField',
@@ -8,26 +8,28 @@ annotate Product with @(
         },
         {
             $Type:'UI.DataField',
-            Value: BaseUnit
-        },
-        {
-            $Type:'UI.DataField',
             Value: ProductType
         },
         {
             $Type:'UI.DataField',
+            Value: BaseUnit
+        },
+      
+        {
+            $Type:'UI.DataField',
             Value: ProductGroup
         },
-         {
+          {
             $Type:'UI.DataField',
             Value: ProductDescription
         },
 
+
     ]
 );
 
-annotate Product with @(       
-    UI.FieldGroup #ProductInformation : {
+annotate nnrg.ProductLocal with @(       
+    UI.FieldGroup #ProductsInformation : {
         $Type : 'UI.FieldGroupType',
         Data : [
             {
@@ -37,28 +39,29 @@ annotate Product with @(
         },
         {
             $Type : 'UI.DataField',
-            Value : BaseUnit
+            Value : ProductType
         },
         {
             $Type : 'UI.DataField',
-            Value :  ProductType
+            Value : BaseUnit
         },
         {
             $Type : 'UI.DataField',
             Value : ProductGroup
         },
-         {
+        {
             $Type : 'UI.DataField',
             Value : ProductDescription
-        }
+        },
+     
         ],
     },
     UI.Facets : [
         {
             $Type : 'UI.ReferenceFacet',
-            ID : ' ProductInformation',
-            Label : 'Product Information',
-            Target : '@UI.FieldGroup#ProductInformation',
+            ID : 'ProductsInfoFacet',
+            Label : 'Products Information',
+            Target : '@UI.FieldGroup#ProductsInformation',                       
         },
-    ],    
+    ],
 );
