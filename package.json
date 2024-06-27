@@ -16,7 +16,7 @@
   "devDependencies": {
     "@cap-js/sqlite": "^1",
     "@sap/cds-dk": "^7.9.1",
-    "@sap/ux-specification": "^1.120.11",
+    "@sap/ux-specification": "^1.120.13",
     "rimraf": "^3.0.2"
   },
   "scripts": {
@@ -59,6 +59,7 @@
   },
   "sapux": [
     "app/kitchen",
-    "app/kitchen"
+    "app/kitchen",
+    "app/productlocal"
   ]
 }

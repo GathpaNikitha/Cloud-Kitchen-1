@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+  <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Common.xml">
+    <edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Core.V1.xml">
+    <edmx:Include Alias="Core" Namespace="Org.OData.Core.V1"/>
+  </edmx:Reference>
+  <edmx:DataServices>
+    <Schema Namespace="API_PRODUCT_SRV" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+      <EntityContainer Name="EntityContainer">
+        <EntitySet Name="A_Product" EntityType="API_PRODUCT_SRV.A_Product">
+          <NavigationPropertyBinding Path="to_Description" Target="A_ProductDescription"/>
+          <NavigationPropertyBinding Path="to_Plant" Target="A_ProductPlant"/>
+          <NavigationPropertyBinding Path="to_ProductBasicText" Target="A_ProductBasicText"/>
+          <NavigationPropertyBinding Path="to_ProductInspectionText" Target="A_ProductInspectionText"/>
+          <NavigationPropertyBinding Path="to_ProductProcurement" Target="A_ProductProcurement"/>
+          <NavigationPropertyBinding Path="to_ProductPurchaseText" Target="A_ProductPurchaseText"/>
+          <NavigationPropertyBinding Path="to_ProductQualityMgmt" Target="A_ProductQualityMgmt"/>
+          <NavigationPropertyBinding Path="to_ProductSales" Target="A_ProductSales"/>
+          <NavigationPropertyBinding Path="to_ProductSalesTax" Target="A_ProductSalesTax"/>
+          <NavigationPropertyBinding Path="to_ProductStorage" Target="A_ProductStorage"/>
+          <NavigationPropertyBinding Path="to_ProductUnitsOfMeasure" Target="A_ProductUnitsOfMeasure"/>
+          <NavigationPropertyBinding Path="to_SalesDelivery" Target="A_ProductSalesDelivery"/>
+          <NavigationPropertyBinding Path="to_Valuation" Target="A_ProductValuation"/>
+        </EntitySet>
+        <EntitySet Name="A_ProductBasicText" EntityType="API_PRODUCT_SRV.A_ProductBasicText"/>
+        <EntitySet Name="A_ProductDescription" EntityType="API_PRODUCT_SRV.A_ProductDescription"/>
+        <EntitySet Name="A_ProductInspectionText" EntityType="API_PRODUCT_SRV.A_ProductInspectionText"/>
+        <EntitySet Name="A_ProductMLAccount" EntityType="API_PRODUCT_SRV.A_ProductMLAccount"/>
+        <EntitySet Name="A_ProductMLPrices" EntityType="API_PRODUCT_SRV.A_ProductMLPrices"/>
+        <EntitySet Name="A_ProductPlant" EntityType="API_PRODUCT_SRV.A_ProductPlant">
+          <NavigationPropertyBinding Path="to_PlantMRPArea" Target="A_ProductPlantMRPArea"/>
+          <NavigationPropertyBinding Path="to_PlantQualityMgmt" Target="A_ProductPlantQualityMgmt"/>
+          <NavigationPropertyBinding Path="to_PlantSales" Target="A_ProductPlantSales"/>
+          <NavigationPropertyBinding Path="to_PlantStorage" Target="A_ProductPlantStorage"/>
+          <NavigationPropertyBinding Path="to_PlantText" Target="A_ProductPlantText"/>
+          <NavigationPropertyBinding Path="to_ProdPlantInternationalTrade" Target="A_ProductPlantIntlTrd"/>
+          <NavigationPropertyBinding Path="to_ProductPlantCosting" Target="A_ProductPlantCosting"/>
+          <NavigationPropertyBinding Path="to_ProductPlantForecast" Target="A_ProductPlantForecasting"/>
+          <NavigationPropertyBinding Path="to_ProductPlantProcurement" Target="A_ProductPlantProcurement"/>
+          <NavigationPropertyBinding Path="to_ProductSupplyPlanning" Target="A_ProductSupplyPlanning"/>
+          <NavigationPropertyBinding Path="to_ProductWorkScheduling" Target="A_ProductWorkScheduling"/>
+          <NavigationPropertyBinding Path="to_StorageLocation" Target="A_ProductStorageLocation"/>
+        </EntitySet>
+        <EntitySet Name="A_ProductPlantCosting" EntityType="API_PRODUCT_SRV.A_ProductPlantCosting"/>
+        <EntitySet Name="A_ProductPlantForecasting" EntityType="API_PRODUCT_SRV.A_ProductPlantForecasting"/>
+        <EntitySet Name="A_ProductPlantIntlTrd" EntityType="API_PRODUCT_SRV.A_ProductPlantIntlTrd"/>
+        <EntitySet Name="A_ProductPlantMRPArea" EntityType="API_PRODUCT_SRV.A_ProductPlantMRPArea"/>
+        <EntitySet Name="A_ProductPlantProcurement" EntityType="API_PRODUCT_SRV.A_ProductPlantProcurement"/>
+        <EntitySet Name="A_ProductPlantQualityMgmt" EntityType="API_PRODUCT_SRV.A_ProductPlantQualityMgmt"/>
+        <EntitySet Name="A_ProductPlantSales" EntityType="API_PRODUCT_SRV.A_ProductPlantSales"/>
+        <EntitySet Name="A_ProductPlantStorage" EntityType="API_PRODUCT_SRV.A_ProductPlantStorage"/>
+        <EntitySet Name="A_ProductPlantText" EntityType="API_PRODUCT_SRV.A_ProductPlantText"/>
+        <EntitySet Name="A_ProductProcurement" EntityType="API_PRODUCT_SRV.A_ProductProcurement"/>
+        <EntitySet Name="A_ProductPurchaseText" EntityType="API_PRODUCT_SRV.A_ProductPurchaseText"/>
+        <EntitySet Name="A_ProductQualityMgmt" EntityType="API_PRODUCT_SRV.A_ProductQualityMgmt"/>
+        <EntitySet Name="A_ProductSales" EntityType="API_PRODUCT_SRV.A_ProductSales"/>
+        <EntitySet Name="A_ProductSalesDelivery" EntityType="API_PRODUCT_SRV.A_ProductSalesDelivery">
+          <NavigationPropertyBinding Path="to_SalesTax" Target="A_ProductSalesTax"/>
+          <NavigationPropertyBinding Path="to_SalesText" Target="A_ProductSalesText"/>
+        </EntitySet>
+        <EntitySet Name="A_ProductSalesTax" EntityType="API_PRODUCT_SRV.A_ProductSalesTax"/>
+        <EntitySet Name="A_ProductSalesText" EntityType="API_PRODUCT_SRV.A_ProductSalesText"/>
+        <EntitySet Name="A_ProductStorage" EntityType="API_PRODUCT_SRV.A_ProductStorage"/>
+        <EntitySet Name="A_ProductStorageLocation" EntityType="API_PRODUCT_SRV.A_ProductStorageLocation"/>
+        <EntitySet Name="A_ProductSupplyPlanning" EntityType="API_PRODUCT_SRV.A_ProductSupplyPlanning"/>
+        <EntitySet Name="A_ProductUnitsOfMeasure" EntityType="API_PRODUCT_SRV.A_ProductUnitsOfMeasure">
+          <NavigationPropertyBinding Path="to_InternationalArticleNumber" Target="A_ProductUnitsOfMeasureEAN"/>
+        </EntitySet>
+        <EntitySet Name="A_ProductUnitsOfMeasureEAN" EntityType="API_PRODUCT_SRV.A_ProductUnitsOfMeasureEAN"/>
+        <EntitySet Name="A_ProductValuation" EntityType="API_PRODUCT_SRV.A_ProductValuation">
+          <NavigationPropertyBinding Path="to_MLAccount" Target="A_ProductMLAccount"/>
+          <NavigationPropertyBinding Path="to_MLPrices" Target="A_ProductMLPrices"/>
+          <NavigationPropertyBinding Path="to_ValuationAccount" Target="A_ProductValuationAccount"/>
+          <NavigationPropertyBinding Path="to_ValuationCosting" Target="A_ProductValuationCosting"/>
+        </EntitySet>
+        <EntitySet Name="A_ProductValuationAccount" EntityType="API_PRODUCT_SRV.A_ProductValuationAccount"/>
+        <EntitySet Name="A_ProductValuationCosting" EntityType="API_PRODUCT_SRV.A_ProductValuationCosting"/>
+        <EntitySet Name="A_ProductWorkScheduling" EntityType="API_PRODUCT_SRV.A_ProductWorkScheduling"/>
+      </EntityContainer>
+      <EntityType Name="A_Product">
+        <Key>
+          <PropertyRef Name="Product"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="ProductType" Type="Edm.String" MaxLength="4"/>
+        <Property Name="CrossPlantStatus" Type="Edm.String" MaxLength="2"/>
+        <Property Name="CrossPlantStatusValidityDate" Type="Edm.Date"/>
+        <Property Name="CreationDate" Type="Edm.Date"/>
+        <Property Name="CreatedByUser" Type="Edm.String" MaxLength="12"/>
+        <Property Name="LastChangeDate" Type="Edm.Date"/>
+        <Property Name="LastChangedByUser" Type="Edm.String" MaxLength="12"/>
+        <Property Name="LastChangeDateTime" Type="Edm.DateTimeOffset" Precision="7"/>
+        <Property Name="IsMarkedForDeletion" Type="Edm.Boolean"/>
+        <Property Name="ProductOldID" Type="Edm.String" MaxLength="40"/>
+        <Property Name="GrossWeight" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="PurchaseOrderQuantityUnit" Type="Edm.String" MaxLength="3"/>
+        <Property Name="SourceOfSupply" Type="Edm.String" MaxLength="1"/>
+        <Property Name="WeightUnit" Type="Edm.String" MaxLength="3"/>
+        <Property Name="NetWeight" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="CountryOfOrigin" Type="Edm.String" MaxLength="3"/>
+        <Property Name="CompetitorID" Type="Edm.String" MaxLength="10"/>
+        <Property Name="ProductGroup" Type="Edm.String" MaxLength="9"/>
+        <Property Name="BaseUnit" Type="Edm.String" MaxLength="3"/>
+        <Property Name="ItemCategoryGroup" Type="Edm.String" MaxLength="4"/>
+        <Property Name="ProductHierarchy" Type="Edm.String" MaxLength="18"/>
+        <Property Name="Division" Type="Edm.String" MaxLength="2"/>
+        <Property Name="VarblPurOrdUnitIsActive" Type="Edm.String" MaxLength="1"/>
+        <Property Name="VolumeUnit" Type="Edm.String" MaxLength="3"/>
+        <Property Name="MaterialVolume" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="ANPCode" Type="Edm.String" MaxLength="9"/>
+        <Property Name="Brand" Type="Edm.String" MaxLength="4"/>
+        <Property Name="ProcurementRule" Type="Edm.String" MaxLength="1"/>
+        <Property Name="ValidityStartDate" Type="Edm.Date"/>
+        <Property Name="LowLevelCode" Type="Edm.String" MaxLength="3"/>
+        <Property Name="ProdNoInGenProdInPrepackProd" Type="Edm.String" MaxLength="40"/>
+        <Property Name="SerialIdentifierAssgmtProfile" Type="Edm.String" MaxLength="4"/>
+        <Property Name="SizeOrDimensionText" Type="Edm.String" MaxLength="32"/>
+        <Property Name="IndustryStandardName" Type="Edm.String" MaxLength="18"/>
+        <Property Name="ProductStandardID" Type="Edm.String" MaxLength="18"/>
+        <Property Name="InternationalArticleNumberCat" Type="Edm.String" MaxLength="2"/>
+        <Property Name="ProductIsConfigurable" Type="Edm.Boolean"/>
+        <Property Name="IsBatchManagementRequired" Type="Edm.Boolean"/>
+        <Property Name="ExternalProductGroup" Type="Edm.String" MaxLength="18"/>
+        <Property Name="CrossPlantConfigurableProduct" Type="Edm.String" MaxLength="40"/>
+        <Property Name="SerialNoExplicitnessLevel" Type="Edm.String" MaxLength="1"/>
+        <Property Name="ProductManufacturerNumber" Type="Edm.String" MaxLength="40"/>
+        <Property Name="ManufacturerNumber" Type="Edm.String" MaxLength="10"/>
+        <Property Name="ManufacturerPartProfile" Type="Edm.String" MaxLength="4"/>
+        <Property Name="QltyMgmtInProcmtIsActive" Type="Edm.Boolean"/>
+        <Property Name="IndustrySector" Type="Edm.String" MaxLength="1"/>
+        <Property Name="ChangeNumber" Type="Edm.String" MaxLength="12"/>
+        <Property Name="MaterialRevisionLevel" Type="Edm.String" MaxLength="2"/>
+        <Property Name="HandlingIndicator" Type="Edm.String" MaxLength="4"/>
+        <Property Name="WarehouseProductGroup" Type="Edm.String" MaxLength="4"/>
+        <Property Name="WarehouseStorageCondition" Type="Edm.String" MaxLength="2"/>
+        <Property Name="StandardHandlingUnitType" Type="Edm.String" MaxLength="4"/>
+        <Property Name="SerialNumberProfile" Type="Edm.String" MaxLength="4"/>
+        <Property Name="AdjustmentProfile" Type="Edm.String" MaxLength="3"/>
+        <Property Name="PreferredUnitOfMeasure" Type="Edm.String" MaxLength="3"/>
+        <Property Name="IsPilferable" Type="Edm.Boolean"/>
+        <Property Name="IsRelevantForHzdsSubstances" Type="Edm.Boolean"/>
+        <Property Name="QuarantinePeriod" Type="Edm.Decimal" Precision="3" Scale="0"/>
+        <Property Name="TimeUnitForQuarantinePeriod" Type="Edm.String" MaxLength="3"/>
+        <Property Name="QualityInspectionGroup" Type="Edm.String" MaxLength="4"/>
+        <Property Name="AuthorizationGroup" Type="Edm.String" MaxLength="4"/>
+        <Property Name="DocumentIsCreatedByCAD" Type="Edm.Boolean"/>
+        <Property Name="HandlingUnitType" Type="Edm.String" MaxLength="4"/>
+        <Property Name="HasVariableTareWeight" Type="Edm.Boolean"/>
+        <Property Name="MaximumPackagingLength" Type="Edm.Decimal" Precision="15" Scale="3"/>
+        <Property Name="MaximumPackagingWidth" Type="Edm.Decimal" Precision="15" Scale="3"/>
+        <Property Name="MaximumPackagingHeight" Type="Edm.Decimal" Precision="15" Scale="3"/>
+        <Property Name="UnitForMaxPackagingDimensions" Type="Edm.String" MaxLength="3"/>
+        <NavigationProperty Name="to_Description" Type="Collection(API_PRODUCT_SRV.A_ProductDescription)"/>
+        <NavigationProperty Name="to_Plant" Type="Collection(API_PRODUCT_SRV.A_ProductPlant)"/>
+        <NavigationProperty Name="to_ProductBasicText" Type="Collection(API_PRODUCT_SRV.A_ProductBasicText)"/>
+        <NavigationProperty Name="to_ProductInspectionText" Type="Collection(API_PRODUCT_SRV.A_ProductInspectionText)"/>
+        <NavigationProperty Name="to_ProductProcurement" Type="API_PRODUCT_SRV.A_ProductProcurement"/>
+        <NavigationProperty Name="to_ProductPurchaseText" Type="Collection(API_PRODUCT_SRV.A_ProductPurchaseText)"/>
+        <NavigationProperty Name="to_ProductQualityMgmt" Type="API_PRODUCT_SRV.A_ProductQualityMgmt"/>
+        <NavigationProperty Name="to_ProductSales" Type="API_PRODUCT_SRV.A_ProductSales"/>
+        <NavigationProperty Name="to_ProductSalesTax" Type="Collection(API_PRODUCT_SRV.A_ProductSalesTax)"/>
+        <NavigationProperty Name="to_ProductStorage" Type="API_PRODUCT_SRV.A_ProductStorage"/>
+        <NavigationProperty Name="to_ProductUnitsOfMeasure" Type="Collection(API_PRODUCT_SRV.A_ProductUnitsOfMeasure)"/>
+        <NavigationProperty Name="to_SalesDelivery" Type="Collection(API_PRODUCT_SRV.A_ProductSalesDelivery)"/>
+        <NavigationProperty Name="to_Valuation" Type="Collection(API_PRODUCT_SRV.A_ProductValuation)"/>
+      </EntityType>
+      <EntityType Name="A_ProductBasicText">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="Language"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="Language" Type="Edm.String" MaxLength="2" Nullable="false"/>
+        <Property Name="LongText" Type="Edm.String"/>
+      </EntityType>
+      <EntityType Name="A_ProductDescription">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="Language"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="Language" Type="Edm.String" MaxLength="2" Nullable="false"/>
+        <Property Name="ProductDescription" Type="Edm.String" MaxLength="40"/>
+      </EntityType>
+      <EntityType Name="A_ProductInspectionText">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="Language"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="Language" Type="Edm.String" MaxLength="2" Nullable="false"/>
+        <Property Name="LongText" Type="Edm.String"/>
+      </EntityType>
+      <EntityType Name="A_ProductMLAccount">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="ValuationArea"/>
+          <PropertyRef Name="ValuationType"/>
+          <PropertyRef Name="CurrencyRole"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="ValuationArea" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="ValuationType" Type="Edm.String" MaxLength="10" Nullable="false"/>
+        <Property Name="CurrencyRole" Type="Edm.String" MaxLength="2" Nullable="false"/>
+        <Property Name="Currency" Type="Edm.String" MaxLength="5"/>
+        <Property Name="ProductPriceControl" Type="Edm.String" MaxLength="1"/>
+        <Property Name="PriceUnitQty" Type="Edm.Decimal" Precision="5" Scale="0"/>
+        <Property Name="MovingAveragePrice" Type="Edm.Decimal" Precision="12" Scale="3"/>
+        <Property Name="StandardPrice" Type="Edm.Decimal" Precision="12" Scale="3"/>
+      </EntityType>
+      <EntityType Name="A_ProductMLPrices">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="ValuationArea"/>
+          <PropertyRef Name="ValuationType"/>
+          <PropertyRef Name="CurrencyRole"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="ValuationArea" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="ValuationType" Type="Edm.String" MaxLength="10" Nullable="false"/>
+        <Property Name="CurrencyRole" Type="Edm.String" MaxLength="2" Nullable="false"/>
+        <Property Name="Currency" Type="Edm.String" MaxLength="5"/>
+        <Property Name="FuturePrice" Type="Edm.Decimal" Precision="12" Scale="3"/>
+        <Property Name="FuturePriceValidityStartDate" Type="Edm.Date"/>
+        <Property Name="PlannedPrice" Type="Edm.Decimal" Precision="24" Scale="3"/>
+      </EntityType>
+      <EntityType Name="A_ProductPlant">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="Plant"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="Plant" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="PurchasingGroup" Type="Edm.String" MaxLength="3"/>
+        <Property Name="CountryOfOrigin" Type="Edm.String" MaxLength="3"/>
+        <Property Name="RegionOfOrigin" Type="Edm.String" MaxLength="3"/>
+        <Property Name="ProductionInvtryManagedLoc" Type="Edm.String" MaxLength="4"/>
+        <Property Name="ProfileCode" Type="Edm.String" MaxLength="2"/>
+        <Property Name="ProfileValidityStartDate" Type="Edm.Date"/>
+        <Property Name="AvailabilityCheckType" Type="Edm.String" MaxLength="2"/>
+        <Property Name="FiscalYearVariant" Type="Edm.String" MaxLength="2"/>
+        <Property Name="PeriodType" Type="Edm.String" MaxLength="1"/>
+        <Property Name="ProfitCenter" Type="Edm.String" MaxLength="10"/>
+        <Property Name="Commodity" Type="Edm.String" MaxLength="17"/>
+        <Property Name="GoodsReceiptDuration" Type="Edm.Decimal" Precision="3" Scale="0"/>
+        <Property Name="MaintenanceStatusName" Type="Edm.String" MaxLength="15"/>
+        <Property Name="IsMarkedForDeletion" Type="Edm.Boolean"/>
+        <Property Name="MRPType" Type="Edm.String" MaxLength="2"/>
+        <Property Name="MRPResponsible" Type="Edm.String" MaxLength="3"/>
+        <Property Name="ABCIndicator" Type="Edm.String" MaxLength="1"/>
+        <Property Name="MinimumLotSizeQuantity" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="MaximumLotSizeQuantity" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="FixedLotSizeQuantity" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="ConsumptionTaxCtrlCode" Type="Edm.String" MaxLength="16"/>
+        <Property Name="IsCoProduct" Type="Edm.Boolean"/>
+        <Property Name="ProductIsConfigurable" Type="Edm.String" MaxLength="40"/>
+        <Property Name="StockDeterminationGroup" Type="Edm.String" MaxLength="4"/>
+        <Property Name="StockInTransferQuantity" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="StockInTransitQuantity" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="HasPostToInspectionStock" Type="Edm.Boolean"/>
+        <Property Name="IsBatchManagementRequired" Type="Edm.Boolean"/>
+        <Property Name="SerialNumberProfile" Type="Edm.String" MaxLength="4"/>
+        <Property Name="IsNegativeStockAllowed" Type="Edm.Boolean"/>
+        <Property Name="GoodsReceiptBlockedStockQty" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="HasConsignmentCtrl" Type="Edm.String" MaxLength="1"/>
+        <Property Name="FiscalYearCurrentPeriod" Type="Edm.String" MaxLength="4"/>
+        <Property Name="FiscalMonthCurrentPeriod" Type="Edm.String" MaxLength="2"/>
+        <Property Name="ProcurementType" Type="Edm.String" MaxLength="1"/>
+        <Property Name="IsInternalBatchManaged" Type="Edm.Boolean"/>
+        <Property Name="ProductCFOPCategory" Type="Edm.String" MaxLength="2"/>
+        <Property Name="ProductIsExciseTaxRelevant" Type="Edm.Boolean"/>
+        <Property Name="BaseUnit" Type="Edm.String" MaxLength="3"/>
+        <Property Name="ConfigurableProduct" Type="Edm.String" MaxLength="40"/>
+        <Property Name="GoodsIssueUnit" Type="Edm.String" MaxLength="3"/>
+        <Property Name="MaterialFreightGroup" Type="Edm.String" MaxLength="8"/>
+        <Property Name="OriginalBatchReferenceMaterial" Type="Edm.String" MaxLength="40"/>
+        <Property Name="OriglBatchManagementIsRequired" Type="Edm.String" MaxLength="1"/>
+        <Property Name="ProductIsCriticalPrt" Type="Edm.Boolean"/>
+        <Property Name="ProductLogisticsHandlingGroup" Type="Edm.String" MaxLength="4"/>
+        <NavigationProperty Name="to_PlantMRPArea" Type="Collection(API_PRODUCT_SRV.A_ProductPlantMRPArea)"/>
+        <NavigationProperty Name="to_PlantQualityMgmt" Type="API_PRODUCT_SRV.A_ProductPlantQualityMgmt"/>
+        <NavigationProperty Name="to_PlantSales" Type="API_PRODUCT_SRV.A_ProductPlantSales"/>
+        <NavigationProperty Name="to_PlantStorage" Type="API_PRODUCT_SRV.A_ProductPlantStorage"/>
+        <NavigationProperty Name="to_PlantText" Type="API_PRODUCT_SRV.A_ProductPlantText"/>
+        <NavigationProperty Name="to_ProdPlantInternationalTrade" Type="API_PRODUCT_SRV.A_ProductPlantIntlTrd"/>
+        <NavigationProperty Name="to_ProductPlantCosting" Type="API_PRODUCT_SRV.A_ProductPlantCosting"/>
+        <NavigationProperty Name="to_ProductPlantForecast" Type="API_PRODUCT_SRV.A_ProductPlantForecasting"/>
+        <NavigationProperty Name="to_ProductPlantProcurement" Type="API_PRODUCT_SRV.A_ProductPlantProcurement"/>
+        <NavigationProperty Name="to_ProductSupplyPlanning" Type="API_PRODUCT_SRV.A_ProductSupplyPlanning"/>
+        <NavigationProperty Name="to_ProductWorkScheduling" Type="API_PRODUCT_SRV.A_ProductWorkScheduling"/>
+        <NavigationProperty Name="to_StorageLocation" Type="Collection(API_PRODUCT_SRV.A_ProductStorageLocation)"/>
+      </EntityType>
+      <EntityType Name="A_ProductPlantCosting">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="Plant"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="Plant" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="IsCoProduct" Type="Edm.Boolean"/>
+        <Property Name="CostingLotSize" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="VarianceKey" Type="Edm.String" MaxLength="6"/>
+        <Property Name="BaseUnit" Type="Edm.String" MaxLength="3"/>
+        <Property Name="TaskListGroupCounter" Type="Edm.String" MaxLength="2"/>
+        <Property Name="TaskListGroup" Type="Edm.String" MaxLength="8"/>
+        <Property Name="TaskListType" Type="Edm.String" MaxLength="1"/>
+        <Property Name="CostingProductionVersion" Type="Edm.String" MaxLength="4"/>
+        <Property Name="IsFixedPriceCoProduct" Type="Edm.Boolean"/>
+        <Property Name="CostingSpecialProcurementType" Type="Edm.String" MaxLength="2"/>
+        <Property Name="SourceBOMAlternative" Type="Edm.String" MaxLength="2"/>
+        <Property Name="ProductBOMUsage" Type="Edm.String" MaxLength="1"/>
+        <Property Name="ProductIsCostingRelevant" Type="Edm.Boolean"/>
+      </EntityType>
+      <EntityType Name="A_ProductPlantForecasting">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="Plant"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="Plant" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="ConsumptionRefUsageEndDate" Type="Edm.Date"/>
+        <Property Name="ConsumptionQtyMultiplier" Type="Edm.Decimal" Precision="4" Scale="2"/>
+        <Property Name="ConsumptionReferenceProduct" Type="Edm.String" MaxLength="40"/>
+        <Property Name="ConsumptionReferencePlant" Type="Edm.String" MaxLength="4"/>
+      </EntityType>
+      <EntityType Name="A_ProductPlantIntlTrd">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="Plant"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="Plant" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="CountryOfOrigin" Type="Edm.String" MaxLength="3"/>
+        <Property Name="RegionOfOrigin" Type="Edm.String" MaxLength="3"/>
+        <Property Name="ConsumptionTaxCtrlCode" Type="Edm.String" MaxLength="16"/>
+        <Property Name="ProductCASNumber" Type="Edm.String" MaxLength="15"/>
+        <Property Name="ProdIntlTradeClassification" Type="Edm.String" MaxLength="9"/>
+        <Property Name="ExportAndImportProductGroup" Type="Edm.String" MaxLength="4"/>
+      </EntityType>
+      <EntityType Name="A_ProductPlantMRPArea">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="Plant"/>
+          <PropertyRef Name="MRPArea"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="Plant" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="MRPArea" Type="Edm.String" MaxLength="10" Nullable="false"/>
+        <Property Name="MRPType" Type="Edm.String" MaxLength="2"/>
+        <Property Name="MRPResponsible" Type="Edm.String" MaxLength="3"/>
+        <Property Name="MRPGroup" Type="Edm.String" MaxLength="4"/>
+        <Property Name="ReorderThresholdQuantity" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="PlanningTimeFence" Type="Edm.String" MaxLength="3"/>
+        <Property Name="LotSizingProcedure" Type="Edm.String" MaxLength="2"/>
+        <Property Name="LotSizeRoundingQuantity" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="MinimumLotSizeQuantity" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="MaximumLotSizeQuantity" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="MaximumStockQuantity" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="AssemblyScrapPercent" Type="Edm.Decimal" Precision="5" Scale="2"/>
+        <Property Name="ProcurementSubType" Type="Edm.String" MaxLength="2"/>
+        <Property Name="DfltStorageLocationExtProcmt" Type="Edm.String" MaxLength="4"/>
+        <Property Name="MRPPlanningCalendar" Type="Edm.String" MaxLength="3"/>
+        <Property Name="SafetyStockQuantity" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="RangeOfCvrgPrflCode" Type="Edm.String" MaxLength="3"/>
+        <Property Name="SafetyDuration" Type="Edm.String" MaxLength="2"/>
+        <Property Name="FixedLotSizeQuantity" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="LotSizeIndependentCosts" Type="Edm.Decimal" Precision="12" Scale="3"/>
+        <Property Name="IsStorageCosts" Type="Edm.String" MaxLength="1"/>
+        <Property Name="RqmtQtyRcptTaktTmeInWrkgDays" Type="Edm.Decimal" Precision="3" Scale="0"/>
+        <Property Name="SrvcLvl" Type="Edm.Decimal" Precision="3" Scale="1"/>
+        <Property Name="IsMarkedForDeletion" Type="Edm.Boolean"/>
+        <Property Name="PerdPrflForSftyTme" Type="Edm.String" MaxLength="3"/>
+        <Property Name="IsMRPDependentRqmt" Type="Edm.String" MaxLength="1"/>
+        <Property Name="IsSafetyTime" Type="Edm.String" MaxLength="1"/>
+        <Property Name="PlannedDeliveryDurationInDays" Type="Edm.Decimal" Precision="3" Scale="0"/>
+        <Property Name="IsPlannedDeliveryTime" Type="Edm.Boolean"/>
+        <Property Name="Currency" Type="Edm.String" MaxLength="5"/>
+        <Property Name="BaseUnit" Type="Edm.String" MaxLength="3"/>
+        <Property Name="PlanAndOrderDayDetermination" Type="Edm.String" MaxLength="3"/>
+        <Property Name="RoundingProfile" Type="Edm.String" MaxLength="4"/>
+        <Property Name="StorageLocation" Type="Edm.String" MaxLength="4"/>
+      </EntityType>
+      <EntityType Name="A_ProductPlantProcurement">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="Plant"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="Plant" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="IsAutoPurOrdCreationAllowed" Type="Edm.Boolean"/>
+        <Property Name="IsSourceListRequired" Type="Edm.Boolean"/>
+        <Property Name="SourceOfSupplyCategory" Type="Edm.String" MaxLength="1"/>
+        <Property Name="ItmIsRlvtToJITDelivSchedules" Type="Edm.String" MaxLength="1"/>
+      </EntityType>
+      <EntityType Name="A_ProductPlantQualityMgmt">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="Plant"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="Plant" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="MaximumStoragePeriod" Type="Edm.Decimal" Precision="5" Scale="0"/>
+        <Property Name="QualityMgmtCtrlKey" Type="Edm.String" MaxLength="8"/>
+        <Property Name="MatlQualityAuthorizationGroup" Type="Edm.String" MaxLength="6"/>
+        <Property Name="HasPostToInspectionStock" Type="Edm.Boolean"/>
+        <Property Name="InspLotDocumentationIsRequired" Type="Edm.Boolean"/>
+        <Property Name="SuplrQualityManagementSystem" Type="Edm.String" MaxLength="4"/>
+        <Property Name="RecrrgInspIntervalTimeInDays" Type="Edm.Decimal" Precision="5" Scale="0"/>
+        <Property Name="ProductQualityCertificateType" Type="Edm.String" MaxLength="4"/>
+      </EntityType>
+      <EntityType Name="A_ProductPlantSales">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="Plant"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="Plant" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="LoadingGroup" Type="Edm.String" MaxLength="4"/>
+        <Property Name="ReplacementPartType" Type="Edm.String" MaxLength="1"/>
+        <Property Name="CapPlanningQuantityInBaseUoM" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="ProductShippingProcessingTime" Type="Edm.Decimal" Precision="5" Scale="2"/>
+        <Property Name="WrkCentersShipgSetupTimeInDays" Type="Edm.Decimal" Precision="5" Scale="2"/>
+        <Property Name="AvailabilityCheckType" Type="Edm.String" MaxLength="2"/>
+        <Property Name="BaseUnit" Type="Edm.String" MaxLength="3"/>
+      </EntityType>
+      <EntityType Name="A_ProductPlantStorage">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="Plant"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="Plant" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="InventoryForCycleCountInd" Type="Edm.String" MaxLength="1"/>
+        <Property Name="ProvisioningServiceLevel" Type="Edm.String" MaxLength="1"/>
+        <Property Name="CycleCountingIndicatorIsFixed" Type="Edm.Boolean"/>
+        <Property Name="ProdMaximumStoragePeriodUnit" Type="Edm.String" MaxLength="3"/>
+        <Property Name="WrhsMgmtPtwyAndStkRemovalStrgy" Type="Edm.String" MaxLength="1"/>
+      </EntityType>
+      <EntityType Name="A_ProductPlantText">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="Plant"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="Plant" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="LongText" Type="Edm.String"/>
+      </EntityType>
+      <EntityType Name="A_ProductProcurement">
+        <Key>
+          <PropertyRef Name="Product"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="PurchaseOrderQuantityUnit" Type="Edm.String" MaxLength="3"/>
+        <Property Name="VarblPurOrdUnitStatus" Type="Edm.String" MaxLength="1"/>
+        <Property Name="PurchasingAcknProfile" Type="Edm.String" MaxLength="4"/>
+      </EntityType>
+      <EntityType Name="A_ProductPurchaseText">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="Language"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="Language" Type="Edm.String" MaxLength="2" Nullable="false"/>
+        <Property Name="LongText" Type="Edm.String"/>
+      </EntityType>
+      <EntityType Name="A_ProductQualityMgmt">
+        <Key>
+          <PropertyRef Name="Product"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="QltyMgmtInProcmtIsActive" Type="Edm.Boolean"/>
+      </EntityType>
+      <EntityType Name="A_ProductSales">
+        <Key>
+          <PropertyRef Name="Product"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="SalesStatus" Type="Edm.String" MaxLength="2"/>
+        <Property Name="SalesStatusValidityDate" Type="Edm.Date"/>
+        <Property Name="TaxClassification" Type="Edm.String" MaxLength="1"/>
+        <Property Name="TransportationGroup" Type="Edm.String" MaxLength="4"/>
+      </EntityType>
+      <EntityType Name="A_ProductSalesDelivery">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="ProductSalesOrg"/>
+          <PropertyRef Name="ProductDistributionChnl"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="ProductSalesOrg" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="ProductDistributionChnl" Type="Edm.String" MaxLength="2" Nullable="false"/>
+        <Property Name="MinimumOrderQuantity" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="SupplyingPlant" Type="Edm.String" MaxLength="4"/>
+        <Property Name="PriceSpecificationProductGroup" Type="Edm.String" MaxLength="2"/>
+        <Property Name="AccountDetnProductGroup" Type="Edm.String" MaxLength="2"/>
+        <Property Name="DeliveryNoteProcMinDelivQty" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="ItemCategoryGroup" Type="Edm.String" MaxLength="4"/>
+        <Property Name="DeliveryQuantityUnit" Type="Edm.String" MaxLength="3"/>
+        <Property Name="DeliveryQuantity" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="ProductSalesStatus" Type="Edm.String" MaxLength="2"/>
+        <Property Name="ProductSalesStatusValidityDate" Type="Edm.Date"/>
+        <Property Name="SalesMeasureUnit" Type="Edm.String" MaxLength="3"/>
+        <Property Name="IsMarkedForDeletion" Type="Edm.Boolean"/>
+        <Property Name="ProductHierarchy" Type="Edm.String" MaxLength="18"/>
+        <Property Name="FirstSalesSpecProductGroup" Type="Edm.String" MaxLength="3"/>
+        <Property Name="SecondSalesSpecProductGroup" Type="Edm.String" MaxLength="3"/>
+        <Property Name="ThirdSalesSpecProductGroup" Type="Edm.String" MaxLength="3"/>
+        <Property Name="FourthSalesSpecProductGroup" Type="Edm.String" MaxLength="3"/>
+        <Property Name="FifthSalesSpecProductGroup" Type="Edm.String" MaxLength="3"/>
+        <Property Name="MinimumMakeToOrderOrderQty" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="BaseUnit" Type="Edm.String" MaxLength="3"/>
+        <Property Name="LogisticsStatisticsGroup" Type="Edm.String" MaxLength="1"/>
+        <Property Name="VolumeRebateGroup" Type="Edm.String" MaxLength="2"/>
+        <Property Name="ProductCommissionGroup" Type="Edm.String" MaxLength="2"/>
+        <Property Name="CashDiscountIsDeductible" Type="Edm.Boolean"/>
+        <Property Name="PricingReferenceProduct" Type="Edm.String" MaxLength="40"/>
+        <Property Name="RoundingProfile" Type="Edm.String" MaxLength="4"/>
+        <Property Name="ProductUnitGroup" Type="Edm.String" MaxLength="4"/>
+        <Property Name="VariableSalesUnitIsNotAllowed" Type="Edm.Boolean"/>
+        <Property Name="ProductHasAttributeID01" Type="Edm.Boolean"/>
+        <Property Name="ProductHasAttributeID02" Type="Edm.Boolean"/>
+        <Property Name="ProductHasAttributeID03" Type="Edm.Boolean"/>
+        <Property Name="ProductHasAttributeID04" Type="Edm.Boolean"/>
+        <Property Name="ProductHasAttributeID05" Type="Edm.Boolean"/>
+        <Property Name="ProductHasAttributeID06" Type="Edm.Boolean"/>
+        <Property Name="ProductHasAttributeID07" Type="Edm.Boolean"/>
+        <Property Name="ProductHasAttributeID08" Type="Edm.Boolean"/>
+        <Property Name="ProductHasAttributeID09" Type="Edm.Boolean"/>
+        <Property Name="ProductHasAttributeID10" Type="Edm.Boolean"/>
+        <NavigationProperty Name="to_SalesTax" Type="Collection(API_PRODUCT_SRV.A_ProductSalesTax)"/>
+        <NavigationProperty Name="to_SalesText" Type="Collection(API_PRODUCT_SRV.A_ProductSalesText)"/>
+      </EntityType>
+      <EntityType Name="A_ProductSalesTax">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="Country"/>
+          <PropertyRef Name="TaxCategory"/>
+          <PropertyRef Name="TaxClassification"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="Country" Type="Edm.String" MaxLength="3" Nullable="false"/>
+        <Property Name="TaxCategory" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="TaxClassification" Type="Edm.String" MaxLength="1" Nullable="false"/>
+      </EntityType>
+      <EntityType Name="A_ProductSalesText">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="ProductSalesOrg"/>
+          <PropertyRef Name="ProductDistributionChnl"/>
+          <PropertyRef Name="Language"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="ProductSalesOrg" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="ProductDistributionChnl" Type="Edm.String" MaxLength="2" Nullable="false"/>
+        <Property Name="Language" Type="Edm.String" MaxLength="2" Nullable="false"/>
+        <Property Name="LongText" Type="Edm.String"/>
+      </EntityType>
+      <EntityType Name="A_ProductStorage">
+        <Key>
+          <PropertyRef Name="Product"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="StorageConditions" Type="Edm.String" MaxLength="2"/>
+        <Property Name="TemperatureConditionInd" Type="Edm.String" MaxLength="2"/>
+        <Property Name="HazardousMaterialNumber" Type="Edm.String" MaxLength="40"/>
+        <Property Name="NmbrOfGROrGISlipsToPrintQty" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="LabelType" Type="Edm.String" MaxLength="2"/>
+        <Property Name="LabelForm" Type="Edm.String" MaxLength="2"/>
+        <Property Name="MinRemainingShelfLife" Type="Edm.Decimal" Precision="4" Scale="0"/>
+        <Property Name="ExpirationDate" Type="Edm.String" MaxLength="1"/>
+        <Property Name="ShelfLifeExpirationDatePeriod" Type="Edm.String" MaxLength="1"/>
+        <Property Name="TotalShelfLife" Type="Edm.Decimal" Precision="4" Scale="0"/>
+        <Property Name="BaseUnit" Type="Edm.String" MaxLength="3"/>
+      </EntityType>
+      <EntityType Name="A_ProductStorageLocation">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="Plant"/>
+          <PropertyRef Name="StorageLocation"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="Plant" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="StorageLocation" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="WarehouseStorageBin" Type="Edm.String" MaxLength="10"/>
+        <Property Name="MaintenanceStatus" Type="Edm.String" MaxLength="15"/>
+        <Property Name="PhysicalInventoryBlockInd" Type="Edm.String" MaxLength="1"/>
+        <Property Name="CreationDate" Type="Edm.Date"/>
+        <Property Name="IsMarkedForDeletion" Type="Edm.Boolean"/>
+        <Property Name="DateOfLastPostedCntUnRstrcdStk" Type="Edm.Date"/>
+        <Property Name="InventoryCorrectionFactor" Type="Edm.Double"/>
+        <Property Name="InvtryRestrictedUseStockInd" Type="Edm.String" MaxLength="3"/>
+        <Property Name="InvtryCurrentYearStockInd" Type="Edm.String" MaxLength="3"/>
+        <Property Name="InvtryQualInspCurrentYrStkInd" Type="Edm.String" MaxLength="3"/>
+        <Property Name="InventoryBlockStockInd" Type="Edm.String" MaxLength="3"/>
+        <Property Name="InvtryRestStockPrevPeriodInd" Type="Edm.String" MaxLength="3"/>
+        <Property Name="InventoryStockPrevPeriod" Type="Edm.String" MaxLength="3"/>
+        <Property Name="InvtryStockQltyInspPrevPeriod" Type="Edm.String" MaxLength="3"/>
+        <Property Name="HasInvtryBlockStockPrevPeriod" Type="Edm.String" MaxLength="3"/>
+        <Property Name="FiscalYearCurrentPeriod" Type="Edm.String" MaxLength="4"/>
+        <Property Name="FiscalMonthCurrentPeriod" Type="Edm.String" MaxLength="2"/>
+        <Property Name="FiscalYearCurrentInvtryPeriod" Type="Edm.String" MaxLength="4"/>
+        <Property Name="LeanWrhsManagementPickingArea" Type="Edm.String" MaxLength="3"/>
+      </EntityType>
+      <EntityType Name="A_ProductSupplyPlanning">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="Plant"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="Plant" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="FixedLotSizeQuantity" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="MaximumLotSizeQuantity" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="MinimumLotSizeQuantity" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="LotSizeRoundingQuantity" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="LotSizingProcedure" Type="Edm.String" MaxLength="2"/>
+        <Property Name="MRPType" Type="Edm.String" MaxLength="2"/>
+        <Property Name="MRPResponsible" Type="Edm.String" MaxLength="3"/>
+        <Property Name="SafetyStockQuantity" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="MinimumSafetyStockQuantity" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="PlanningTimeFence" Type="Edm.String" MaxLength="3"/>
+        <Property Name="ABCIndicator" Type="Edm.String" MaxLength="1"/>
+        <Property Name="MaximumStockQuantity" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="ReorderThresholdQuantity" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="PlannedDeliveryDurationInDays" Type="Edm.Decimal" Precision="3" Scale="0"/>
+        <Property Name="SafetyDuration" Type="Edm.String" MaxLength="2"/>
+        <Property Name="PlanningStrategyGroup" Type="Edm.String" MaxLength="2"/>
+        <Property Name="TotalReplenishmentLeadTime" Type="Edm.Decimal" Precision="3" Scale="0"/>
+        <Property Name="ProcurementType" Type="Edm.String" MaxLength="1"/>
+        <Property Name="ProcurementSubType" Type="Edm.String" MaxLength="2"/>
+        <Property Name="AssemblyScrapPercent" Type="Edm.Decimal" Precision="5" Scale="2"/>
+        <Property Name="AvailabilityCheckType" Type="Edm.String" MaxLength="2"/>
+        <Property Name="GoodsReceiptDuration" Type="Edm.Decimal" Precision="3" Scale="0"/>
+        <Property Name="MRPGroup" Type="Edm.String" MaxLength="4"/>
+        <Property Name="DfltStorageLocationExtProcmt" Type="Edm.String" MaxLength="4"/>
+        <Property Name="ProdRqmtsConsumptionMode" Type="Edm.String" MaxLength="1"/>
+        <Property Name="BackwardCnsmpnPeriodInWorkDays" Type="Edm.String" MaxLength="3"/>
+        <Property Name="FwdConsumptionPeriodInWorkDays" Type="Edm.String" MaxLength="3"/>
+        <Property Name="BaseUnit" Type="Edm.String" MaxLength="3"/>
+        <Property Name="PlanAndOrderDayDetermination" Type="Edm.String" MaxLength="3"/>
+        <Property Name="RoundingProfile" Type="Edm.String" MaxLength="4"/>
+        <Property Name="LotSizeIndependentCosts" Type="Edm.Decimal" Precision="12" Scale="3"/>
+        <Property Name="MRPPlanningCalendar" Type="Edm.String" MaxLength="3"/>
+        <Property Name="RangeOfCvrgPrflCode" Type="Edm.String" MaxLength="3"/>
+        <Property Name="IsSafetyTime" Type="Edm.String" MaxLength="1"/>
+        <Property Name="PerdPrflForSftyTme" Type="Edm.String" MaxLength="3"/>
+        <Property Name="IsMRPDependentRqmt" Type="Edm.String" MaxLength="1"/>
+        <Property Name="InHouseProductionTime" Type="Edm.Decimal" Precision="3" Scale="0"/>
+        <Property Name="ProductIsForCrossProject" Type="Edm.String" MaxLength="1"/>
+        <Property Name="StorageCostsPercentageCode" Type="Edm.String" MaxLength="1"/>
+        <Property Name="SrvcLvl" Type="Edm.Decimal" Precision="3" Scale="1"/>
+        <Property Name="MRPAvailabilityType" Type="Edm.String" MaxLength="1"/>
+        <Property Name="FollowUpProduct" Type="Edm.String" MaxLength="40"/>
+        <Property Name="RepetitiveManufacturingIsAllwd" Type="Edm.Boolean"/>
+        <Property Name="DependentRequirementsType" Type="Edm.String" MaxLength="1"/>
+        <Property Name="IsBulkMaterialComponent" Type="Edm.Boolean"/>
+        <Property Name="RepetitiveManufacturingProfile" Type="Edm.String" MaxLength="4"/>
+        <Property Name="RqmtQtyRcptTaktTmeInWrkgDays" Type="Edm.Decimal" Precision="3" Scale="0"/>
+        <Property Name="ForecastRequirementsAreSplit" Type="Edm.String" MaxLength="1"/>
+        <Property Name="EffectiveOutDate" Type="Edm.Date"/>
+        <Property Name="MRPProfile" Type="Edm.String" MaxLength="4"/>
+        <Property Name="ComponentScrapInPercent" Type="Edm.Decimal" Precision="5" Scale="2"/>
+        <Property Name="ProductIsToBeDiscontinued" Type="Edm.String" MaxLength="1"/>
+        <Property Name="ProdRqmtsAreConsolidated" Type="Edm.String" MaxLength="1"/>
+        <Property Name="MatlCompIsMarkedForBackflush" Type="Edm.String" MaxLength="1"/>
+        <Property Name="ProposedProductSupplyArea" Type="Edm.String" MaxLength="10"/>
+        <Property Name="Currency" Type="Edm.String" MaxLength="5"/>
+        <Property Name="PlannedOrderActionControl" Type="Edm.String" MaxLength="2"/>
+      </EntityType>
+      <EntityType Name="A_ProductUnitsOfMeasure">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="AlternativeUnit"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="AlternativeUnit" Type="Edm.String" MaxLength="3" Nullable="false"/>
+        <Property Name="QuantityNumerator" Type="Edm.Decimal" Precision="5" Scale="0"/>
+        <Property Name="QuantityDenominator" Type="Edm.Decimal" Precision="5" Scale="0"/>
+        <Property Name="MaterialVolume" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="VolumeUnit" Type="Edm.String" MaxLength="3"/>
+        <Property Name="GrossWeight" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="WeightUnit" Type="Edm.String" MaxLength="3"/>
+        <Property Name="GlobalTradeItemNumber" Type="Edm.String" MaxLength="18"/>
+        <Property Name="GlobalTradeItemNumberCategory" Type="Edm.String" MaxLength="2"/>
+        <Property Name="UnitSpecificProductLength" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="UnitSpecificProductWidth" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="UnitSpecificProductHeight" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="ProductMeasurementUnit" Type="Edm.String" MaxLength="3"/>
+        <Property Name="LowerLevelPackagingUnit" Type="Edm.String" MaxLength="3"/>
+        <Property Name="RemainingVolumeAfterNesting" Type="Edm.Decimal" Precision="3" Scale="0"/>
+        <Property Name="MaximumStackingFactor" Type="Edm.Byte"/>
+        <Property Name="CapacityUsage" Type="Edm.Decimal" Precision="15" Scale="3"/>
+        <Property Name="BaseUnit" Type="Edm.String" MaxLength="3"/>
+        <NavigationProperty Name="to_InternationalArticleNumber" Type="Collection(API_PRODUCT_SRV.A_ProductUnitsOfMeasureEAN)"/>
+      </EntityType>
+      <EntityType Name="A_ProductUnitsOfMeasureEAN">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="AlternativeUnit"/>
+          <PropertyRef Name="ConsecutiveNumber"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="AlternativeUnit" Type="Edm.String" MaxLength="3" Nullable="false"/>
+        <Property Name="ConsecutiveNumber" Type="Edm.String" MaxLength="5" Nullable="false"/>
+        <Property Name="ProductStandardID" Type="Edm.String" MaxLength="18"/>
+        <Property Name="InternationalArticleNumberCat" Type="Edm.String" MaxLength="2"/>
+        <Property Name="IsMainGlobalTradeItemNumber" Type="Edm.Boolean"/>
+      </EntityType>
+      <EntityType Name="A_ProductValuation">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="ValuationArea"/>
+          <PropertyRef Name="ValuationType"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="ValuationArea" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="ValuationType" Type="Edm.String" MaxLength="10" Nullable="false"/>
+        <Property Name="ValuationClass" Type="Edm.String" MaxLength="4"/>
+        <Property Name="PriceDeterminationControl" Type="Edm.String" MaxLength="1"/>
+        <Property Name="StandardPrice" Type="Edm.Decimal" Precision="12" Scale="3"/>
+        <Property Name="PriceUnitQty" Type="Edm.Decimal" Precision="5" Scale="0"/>
+        <Property Name="InventoryValuationProcedure" Type="Edm.String" MaxLength="1"/>
+        <Property Name="IsMarkedForDeletion" Type="Edm.Boolean"/>
+        <Property Name="MovingAveragePrice" Type="Edm.Decimal" Precision="12" Scale="3"/>
+        <Property Name="ValuationCategory" Type="Edm.String" MaxLength="1"/>
+        <Property Name="ProductUsageType" Type="Edm.String" MaxLength="1"/>
+        <Property Name="ProductOriginType" Type="Edm.String" MaxLength="1"/>
+        <Property Name="IsProducedInhouse" Type="Edm.Boolean"/>
+        <Property Name="ProdCostEstNumber" Type="Edm.String" MaxLength="12"/>
+        <Property Name="ProjectStockValuationClass" Type="Edm.String" MaxLength="4"/>
+        <Property Name="ValuationClassSalesOrderStock" Type="Edm.String" MaxLength="4"/>
+        <Property Name="PlannedPrice1InCoCodeCrcy" Type="Edm.Decimal" Precision="12" Scale="3"/>
+        <Property Name="PlannedPrice2InCoCodeCrcy" Type="Edm.Decimal" Precision="12" Scale="3"/>
+        <Property Name="PlannedPrice3InCoCodeCrcy" Type="Edm.Decimal" Precision="12" Scale="3"/>
+        <Property Name="FuturePlndPrice1ValdtyDate" Type="Edm.Date"/>
+        <Property Name="FuturePlndPrice2ValdtyDate" Type="Edm.Date"/>
+        <Property Name="FuturePlndPrice3ValdtyDate" Type="Edm.Date"/>
+        <Property Name="TaxBasedPricesPriceUnitQty" Type="Edm.Decimal" Precision="5" Scale="0"/>
+        <Property Name="PriceLastChangeDate" Type="Edm.Date"/>
+        <Property Name="PlannedPrice" Type="Edm.Decimal" Precision="12" Scale="3"/>
+        <Property Name="PrevInvtryPriceInCoCodeCrcy" Type="Edm.Decimal" Precision="12" Scale="3"/>
+        <Property Name="Currency" Type="Edm.String" MaxLength="5"/>
+        <Property Name="BaseUnit" Type="Edm.String" MaxLength="3"/>
+        <NavigationProperty Name="to_MLAccount" Type="Collection(API_PRODUCT_SRV.A_ProductMLAccount)"/>
+        <NavigationProperty Name="to_MLPrices" Type="Collection(API_PRODUCT_SRV.A_ProductMLPrices)"/>
+        <NavigationProperty Name="to_ValuationAccount" Type="API_PRODUCT_SRV.A_ProductValuationAccount"/>
+        <NavigationProperty Name="to_ValuationCosting" Type="API_PRODUCT_SRV.A_ProductValuationCosting"/>
+      </EntityType>
+      <EntityType Name="A_ProductValuationAccount">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="ValuationArea"/>
+          <PropertyRef Name="ValuationType"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="ValuationArea" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="ValuationType" Type="Edm.String" MaxLength="10" Nullable="false"/>
+        <Property Name="CommercialPrice1InCoCodeCrcy" Type="Edm.Decimal" Precision="12" Scale="3"/>
+        <Property Name="CommercialPrice2InCoCodeCrcy" Type="Edm.Decimal" Precision="12" Scale="3"/>
+        <Property Name="CommercialPrice3InCoCodeCrcy" Type="Edm.Decimal" Precision="12" Scale="3"/>
+        <Property Name="DevaluationYearCount" Type="Edm.String" MaxLength="2"/>
+        <Property Name="FutureEvaluatedAmountValue" Type="Edm.Decimal" Precision="12" Scale="3"/>
+        <Property Name="FuturePriceValidityStartDate" Type="Edm.Date"/>
+        <Property Name="IsLIFOAndFIFORelevant" Type="Edm.Boolean"/>
+        <Property Name="LIFOValuationPoolNumber" Type="Edm.String" MaxLength="4"/>
+        <Property Name="TaxPricel1InCoCodeCrcy" Type="Edm.Decimal" Precision="12" Scale="3"/>
+        <Property Name="TaxPrice2InCoCodeCrcy" Type="Edm.Decimal" Precision="12" Scale="3"/>
+        <Property Name="TaxPrice3InCoCodeCrcy" Type="Edm.Decimal" Precision="12" Scale="3"/>
+        <Property Name="Currency" Type="Edm.String" MaxLength="5"/>
+      </EntityType>
+      <EntityType Name="A_ProductValuationCosting">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="ValuationArea"/>
+          <PropertyRef Name="ValuationType"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="ValuationArea" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="ValuationType" Type="Edm.String" MaxLength="10" Nullable="false"/>
+        <Property Name="IsMaterialCostedWithQtyStruc" Type="Edm.Boolean"/>
+        <Property Name="IsMaterialRelatedOrigin" Type="Edm.String" MaxLength="1"/>
+        <Property Name="CostOriginGroup" Type="Edm.String" MaxLength="4"/>
+        <Property Name="CostingOverheadGroup" Type="Edm.String" MaxLength="10"/>
+      </EntityType>
+      <EntityType Name="A_ProductWorkScheduling">
+        <Key>
+          <PropertyRef Name="Product"/>
+          <PropertyRef Name="Plant"/>
+        </Key>
+        <Property Name="Product" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="Plant" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="MaterialBaseQuantity" Type="Edm.Decimal" Precision="13" Scale="3"/>
+        <Property Name="UnlimitedOverDelivIsAllowed" Type="Edm.Boolean"/>
+        <Property Name="OverDelivToleranceLimit" Type="Edm.Decimal" Precision="3" Scale="1"/>
+        <Property Name="UnderDelivToleranceLimit" Type="Edm.Decimal" Precision="3" Scale="1"/>
+        <Property Name="ProductionInvtryManagedLoc" Type="Edm.String" MaxLength="4"/>
+        <Property Name="BaseUnit" Type="Edm.String" MaxLength="3"/>
+        <Property Name="ProductProcessingTime" Type="Edm.Decimal" Precision="5" Scale="2"/>
+        <Property Name="ProductionSupervisor" Type="Edm.String" MaxLength="3"/>
+        <Property Name="ProductProductionQuantityUnit" Type="Edm.String" MaxLength="3"/>
+        <Property Name="ProdnOrderIsBatchRequired" Type="Edm.String" MaxLength="1"/>
+        <Property Name="TransitionMatrixProductsGroup" Type="Edm.String" MaxLength="20"/>
+        <Property Name="OrderChangeManagementProfile" Type="Edm.String" MaxLength="6"/>
+        <Property Name="MatlCompIsMarkedForBackflush" Type="Edm.String" MaxLength="1"/>
+        <Property Name="SetupAndTeardownTime" Type="Edm.Decimal" Precision="5" Scale="2"/>
+        <Property Name="ProductionSchedulingProfile" Type="Edm.String" MaxLength="6"/>
+        <Property Name="TransitionTime" Type="Edm.Decimal" Precision="5" Scale="2"/>
+      </EntityType>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>
