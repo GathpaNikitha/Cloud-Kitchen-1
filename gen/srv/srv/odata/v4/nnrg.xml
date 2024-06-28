@@ -351,19 +351,15 @@
       </Annotations>
       <Annotations Target="nnrg.ProductLocal/Product">
         <Annotation Term="Common.Label" String="Product"/>
-        <Annotation Term="Core.Computed" Bool="true"/>
       </Annotations>
       <Annotations Target="nnrg.ProductLocal/ProductType">
         <Annotation Term="Common.Label" String="ProductType"/>
-        <Annotation Term="Core.Computed" Bool="true"/>
       </Annotations>
       <Annotations Target="nnrg.ProductLocal/BaseUnit">
         <Annotation Term="Common.Label" String="BaseUnit"/>
-        <Annotation Term="Core.Computed" Bool="true"/>
       </Annotations>
       <Annotations Target="nnrg.ProductLocal/ProductGroup">
         <Annotation Term="Common.Label" String="ProductGroup"/>
-        <Annotation Term="Core.Computed" Bool="true"/>
       </Annotations>
       <Annotations Target="nnrg.ProductLocal/ProductDescription">
         <Annotation Term="Common.Label" String="ProductDescription"/>

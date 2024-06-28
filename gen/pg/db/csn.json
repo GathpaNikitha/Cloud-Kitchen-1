@@ -153,26 +153,22 @@
         },
         "Product": {
           "@title": "Product",
-          "@readonly": true,
           "key": true,
           "type": "cds.String",
           "length": 40
         },
         "ProductType": {
           "@title": "ProductType",
-          "@readonly": true,
           "type": "cds.String",
           "length": 4
         },
         "BaseUnit": {
           "@title": "BaseUnit",
-          "@readonly": true,
           "type": "cds.String",
           "length": 3
         },
         "ProductGroup": {
           "@title": "ProductGroup",
-          "@readonly": true,
           "type": "cds.String",
           "length": 18
         },
@@ -674,26 +670,22 @@
         },
         "Product": {
           "@title": "Product",
-          "@readonly": true,
           "key": true,
           "type": "cds.String",
           "length": 40
         },
         "ProductType": {
           "@title": "ProductType",
-          "@readonly": true,
           "type": "cds.String",
           "length": 4
         },
         "BaseUnit": {
           "@title": "BaseUnit",
-          "@readonly": true,
           "type": "cds.String",
           "length": 3
         },
         "ProductGroup": {
           "@title": "ProductGroup",
-          "@readonly": true,
           "type": "cds.String",
           "length": 18
         },
