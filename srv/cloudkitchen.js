@@ -1,4 +1,3 @@
-const { indexof } = require('@cap-js/postgres/lib/func');
 const cds = require('@sap/cds');
  
 module.exports = cds.service.impl(async function(){
@@ -51,6 +50,9 @@ module.exports = cds.service.impl(async function(){
         updqry = UPDATE(ProductDescription).data({"ProductDescription":req.data.ProductDescription}).where({Product: req.data.Product, Language: 'EN'})
         await productapi.run(updqry);
     });
+   
+    
+    
 
   
 })

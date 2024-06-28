@@ -15,6 +15,7 @@
     "Language": "اللغة",
     "LanguageCode": "رمز اللغة",
     "LanguageCode.Description": "رمز الدولة المحدد حسب ISO 639-1",
+    "TimeZoneCode": "رمز المنطقة الزمنية",
     "UserID": "معرف المستخدم",
     "Name": "الاسم",
     "Description": "الوصف",
@@ -27,8 +28,7 @@
     "Draft_LastChangeDateTime": "تاريخ آخر تغيير للمسودة",
     "Draft_LastChangedByUser": "آخر تغيير للمسودة بواسطة",
     "Draft_InProcessByUser": "المسودة قيد المعالجة بواسطة",
-    "Draft_DraftIsProcessedByMe": "المسودة قيد المعالجة بواسطتي",
-    "TimeZoneCode": "Time Zone Code"
+    "Draft_DraftIsProcessedByMe": "المسودة قيد المعالجة بواسطتي"
   },
   "cs": {
     "CreatedBy": "Vytvořil(a)",
@@ -46,6 +46,7 @@
     "Language": "Jazyk",
     "LanguageCode": "Kód jazyka",
     "LanguageCode.Description": "Kód jazyka zadaný dle ISO 639-1",
+    "TimeZoneCode": "Kód časového pásma",
     "UserID": "ID uživatele",
     "Name": "Jméno",
     "Description": "Popis",
@@ -58,8 +59,7 @@
     "Draft_LastChangeDateTime": "Návrh naposledy změněn dne",
     "Draft_LastChangedByUser": "Návrh naposledy změnil",
     "Draft_InProcessByUser": "Návrh zpracovává",
-    "Draft_DraftIsProcessedByMe": "Návrh zpracovávaný mnou",
-    "TimeZoneCode": "Time Zone Code"
+    "Draft_DraftIsProcessedByMe": "Návrh zpracovávaný mnou"
   },
   "da": {
     "CreatedBy": "Oprettet af",
@@ -77,6 +77,7 @@
     "Language": "Sprog",
     "LanguageCode": "Sprogkode",
     "LanguageCode.Description": "Sprogkode som angivet af ISO 639-1",
+    "TimeZoneCode": "Tidszonekode",
     "UserID": "Bruger-ID",
     "Name": "Navn",
     "Description": "Beskrivelse",
@@ -89,8 +90,7 @@
     "Draft_LastChangeDateTime": "Udkast senest ændret den",
     "Draft_LastChangedByUser": "Udkast senest ændret af",
     "Draft_InProcessByUser": "Udkast behandles af",
-    "Draft_DraftIsProcessedByMe": "Udkast behandles af mig",
-    "TimeZoneCode": "Time Zone Code"
+    "Draft_DraftIsProcessedByMe": "Udkast behandles af mig"
   },
   "de": {
     "CreatedBy": "Angelegt von",
@@ -201,6 +201,7 @@
     "Language": "Idioma",
     "LanguageCode": "Código de idioma",
     "LanguageCode.Description": "Código de idioma según especificado por ISO 639-1",
+    "TimeZoneCode": "Código de zona horaria",
     "UserID": "ID de usuario",
     "Name": "Nombre",
     "Description": "Descripción",
@@ -213,8 +214,7 @@
     "Draft_LastChangeDateTime": "Fecha del último cambio en borrador",
     "Draft_LastChangedByUser": "Autor del último cambio en borrador",
     "Draft_InProcessByUser": "Borrador en proceso por",
-    "Draft_DraftIsProcessedByMe": "Borrador en proceso por mí",
-    "TimeZoneCode": "Time Zone Code"
+    "Draft_DraftIsProcessedByMe": "Borrador en proceso por mí"
   },
   "fi": {
     "CreatedBy": "Tekijä",
@@ -232,6 +232,7 @@
     "Language": "Kieli",
     "LanguageCode": "Kielikoodi",
     "LanguageCode.Description": "ISO 639-1:n mukainen kielikoodi",
+    "TimeZoneCode": "Aikavyöhykekoodi",
     "UserID": "Käyttäjätunnus",
     "Name": "Nimi",
     "Description": "Kuvaus",
@@ -244,8 +245,7 @@
     "Draft_LastChangeDateTime": "Luonnosta muutettu viimeksi",
     "Draft_LastChangedByUser": "Luonnoksen viimeisin muuttaja",
     "Draft_InProcessByUser": "Luonnos käsiteltävänä -",
-    "Draft_DraftIsProcessedByMe": "Luonnos minun käsiteltävänäni",
-    "TimeZoneCode": "Time Zone Code"
+    "Draft_DraftIsProcessedByMe": "Luonnos minun käsiteltävänäni"
   },
   "fr": {
     "CreatedBy": "Auteur de la création",
@@ -287,12 +287,14 @@
     "CurrencyCode": "Pénznem kódja",
     "CurrencyCode.Description": "Pénznem kódja ISO 4217 szerint",
     "CurrencySymbol": "Pénznem szimbóluma",
+    "CurrencyMinorUnit": "Pénznem segédegység-hányadok",
     "Country": "Ország/régió",
     "CountryCode": "Ország/régió kódja",
     "CountryCode.Description": "Ország/régió kódja ISO 3166-1 szerint",
     "Language": "Nyelv",
     "LanguageCode": "Nyelvkód",
     "LanguageCode.Description": "Pénznem kódja ISO 639-1 szerint",
+    "TimeZoneCode": "Időzóna kódja",
     "UserID": "Felhasználóazonosító",
     "Name": "Név",
     "Description": "Leírás",
@@ -305,9 +307,7 @@
     "Draft_LastChangeDateTime": "Tervezet utolsó módosításának dátuma",
     "Draft_LastChangedByUser": "Tervezet utolsó módosítója",
     "Draft_InProcessByUser": "Tervezet feldolgozás alatt, feldolgozó neve",
-    "Draft_DraftIsProcessedByMe": "Tervezet feldolgozás alatt általam",
-    "CurrencyMinorUnit": "Currency Minor Unit Fractions",
-    "TimeZoneCode": "Time Zone Code"
+    "Draft_DraftIsProcessedByMe": "Tervezet feldolgozás alatt általam"
   },
   "it": {
     "CreatedBy": "Autore creazione",
@@ -387,6 +387,7 @@
     "Language": "언어",
     "LanguageCode": "언어 코드",
     "LanguageCode.Description": "ISO 639-1에서 지정한 언어 코드",
+    "TimeZoneCode": "시간대 코드",
     "UserID": "사용자 ID",
     "Name": "이름",
     "Description": "내역",
@@ -399,8 +400,7 @@
     "Draft_LastChangeDateTime": "드래프트 최종 변경일",
     "Draft_LastChangedByUser": "드래프트 최종 변경자",
     "Draft_InProcessByUser": "드래프트 처리 중인 사용자",
-    "Draft_DraftIsProcessedByMe": "내가 처리 중인 드래프트",
-    "TimeZoneCode": "Time Zone Code"
+    "Draft_DraftIsProcessedByMe": "내가 처리 중인 드래프트"
   },
   "ms": {
     "CreatedBy": "Dicipta oleh",
@@ -418,6 +418,7 @@
     "Language": "Bahasa",
     "LanguageCode": "Kod Bahasa",
     "LanguageCode.Description": "Kod bahasa seperti yang dinyatakan dalam ISO 639-1",
+    "TimeZoneCode": "Kod Zon Waktu",
     "UserID": "ID Pengguna",
     "Name": "Nama",
     "Description": "Perihalan",
@@ -430,8 +431,7 @@
     "Draft_LastChangeDateTime": "Draf Terakhir Diubah pada",
     "Draft_LastChangedByUser": "Draf Terakhir Diubah oleh",
     "Draft_InProcessByUser": "Draf Sedang Diproses oleh",
-    "Draft_DraftIsProcessedByMe": "Draf Sedang Diproses oleh Saya",
-    "TimeZoneCode": "Time Zone Code"
+    "Draft_DraftIsProcessedByMe": "Draf Sedang Diproses oleh Saya"
   },
   "nl": {
     "CreatedBy": "Gecreëerd door",
@@ -449,6 +449,7 @@
     "Language": "Taal",
     "LanguageCode": "Taalcode",
     "LanguageCode.Description": "Taalcode zoals gespecificeerd door ISO 639-1",
+    "TimeZoneCode": "Code tijdzone",
     "UserID": "Gebruikers-ID",
     "Name": "Naam",
     "Description": "Omschrijving",
@@ -461,8 +462,7 @@
     "Draft_LastChangeDateTime": "Concept laatst gewijzigd op",
     "Draft_LastChangedByUser": "Concept laatst gewijzigd door",
     "Draft_InProcessByUser": "Concept wordt bewerkt door",
-    "Draft_DraftIsProcessedByMe": "Concept wordt bewerkt door mij",
-    "TimeZoneCode": "Time Zone Code"
+    "Draft_DraftIsProcessedByMe": "Concept wordt bewerkt door mij"
   },
   "no": {
     "CreatedBy": "Opprettet av",
@@ -480,6 +480,7 @@
     "Language": "Språk",
     "LanguageCode": "Språkkode",
     "LanguageCode.Description": "Språkkode som definert i ISO 639-1",
+    "TimeZoneCode": "Kode for tidssone",
     "UserID": "Bruker-ID",
     "Name": "Navn",
     "Description": "Beskrivelse",
@@ -492,8 +493,7 @@
     "Draft_LastChangeDateTime": "Utkast sist endret den",
     "Draft_LastChangedByUser": "Utkast sist endret av",
     "Draft_InProcessByUser": "Utkast under behandling av",
-    "Draft_DraftIsProcessedByMe": "Utkast under behandling av meg",
-    "TimeZoneCode": "Time Zone Code"
+    "Draft_DraftIsProcessedByMe": "Utkast under behandling av meg"
   },
   "pl": {
     "CreatedBy": "Utworzone przez",
@@ -573,6 +573,7 @@
     "Language": "Limbă",
     "LanguageCode": "Cod de limbă",
     "LanguageCode.Description": "Cod de limbă așa cum este specificat de ISO 639-1",
+    "TimeZoneCode": "Cod fus orar",
     "UserID": "ID utilizator",
     "Name": "Nume",
     "Description": "Descriere",
@@ -585,8 +586,7 @@
     "Draft_LastChangeDateTime": "Versiune preliminară modificată ultima dată pe",
     "Draft_LastChangedByUser": "Versiune preliminară modificată ultima dată de",
     "Draft_InProcessByUser": "Versiune preliminară în prelucrare de",
-    "Draft_DraftIsProcessedByMe": "Versiune preliminară în prelucrare de mine",
-    "TimeZoneCode": "Time Zone Code"
+    "Draft_DraftIsProcessedByMe": "Versiune preliminară în prelucrare de mine"
   },
   "ru": {
     "CreatedBy": "Создал",
@@ -635,6 +635,7 @@
     "Language": "Språk",
     "LanguageCode": "Språkkod",
     "LanguageCode.Description": "Språkkod enligt ISO 639-1",
+    "TimeZoneCode": "Tidszonskod",
     "UserID": "Användar-ID",
     "Name": "Namn",
     "Description": "Beskrivning",
@@ -647,8 +648,7 @@
     "Draft_LastChangeDateTime": "Senaste utkaständring den",
     "Draft_LastChangedByUser": "Senaste utkaständring av",
     "Draft_InProcessByUser": "Utkast under bearbetning av",
-    "Draft_DraftIsProcessedByMe": "Utkast under bearbetning av mig",
-    "TimeZoneCode": "Time Zone Code"
+    "Draft_DraftIsProcessedByMe": "Utkast under bearbetning av mig"
   },
   "th": {
     "CreatedBy": "สร้างโดย",
@@ -666,6 +666,7 @@
     "Language": "ภาษา",
     "LanguageCode": "รหัสภาษา",
     "LanguageCode.Description": "รหัสภาษาตามที่ระบุใน ISO 639-1",
+    "TimeZoneCode": "รหัสเขตเวลา",
     "UserID": "ID ผู้ใช้",
     "Name": "ชื่อ",
     "Description": "คำอธิบาย",
@@ -678,8 +679,7 @@
     "Draft_LastChangeDateTime": "เปลี่ยนแปลงแบบร่างครั้งล่าสุดเมื่อ",
     "Draft_LastChangedByUser": "เปลี่ยนแปลงแบบร่างครั้งล่าสุดโดย",
     "Draft_InProcessByUser": "แบบร่างอยู่ระหว่างดำเนินการโดย",
-    "Draft_DraftIsProcessedByMe": "แบบร่างที่ฉันกำลังดำเนินการ",
-    "TimeZoneCode": "Time Zone Code"
+    "Draft_DraftIsProcessedByMe": "แบบร่างที่ฉันกำลังดำเนินการ"
   },
   "tr": {
     "CreatedBy": "Oluşturan",
@@ -690,12 +690,14 @@
     "CurrencyCode": "Para birimi kodu",
     "CurrencyCode.Description": "ISO 4217'ye göre belirtilen para birimi kodu",
     "CurrencySymbol": "Para birimi sembolü",
+    "CurrencyMinorUnit": "Para biriminin küçük birim kesirleri",
     "Country": "Ülke/bölge",
     "CountryCode": "Ülke/bölge kodu",
     "CountryCode.Description": "ISO 3166-1'e göre belirtilen ülke/bölge kodu",
     "Language": "Dil",
     "LanguageCode": "Dil kodu",
     "LanguageCode.Description": "ISO 639-1'e göre belirtilen dil kodu",
+    "TimeZoneCode": "Saat dilimi kodu",
     "UserID": "Kullanıcı tanıtıcısı",
     "Name": "Ad",
     "Description": "Tanım",
@@ -708,9 +710,7 @@
     "Draft_LastChangeDateTime": "Taslağın son değişiklik tarihi",
     "Draft_LastChangedByUser": "Taslağı son değiştiren",
     "Draft_InProcessByUser": "Taslağı işleyen",
-    "Draft_DraftIsProcessedByMe": "Tarafımdan işlenen taslak",
-    "CurrencyMinorUnit": "Currency Minor Unit Fractions",
-    "TimeZoneCode": "Time Zone Code"
+    "Draft_DraftIsProcessedByMe": "Tarafımdan işlenen taslak"
   },
   "zh_CN": {
     "CreatedBy": "创建者",
@@ -759,6 +759,7 @@
     "Language": "語言",
     "LanguageCode": "語言代碼",
     "LanguageCode.Description": "已按 ISO 639-1 指定公司代碼",
+    "TimeZoneCode": "時區代碼",
     "UserID": "使用者 ID",
     "Name": "名稱",
     "Description": "說明",
@@ -771,8 +772,7 @@
     "Draft_LastChangeDateTime": "草稿的上次更改日期",
     "Draft_LastChangedByUser": "草稿的上次更改者",
     "Draft_InProcessByUser": "正在處理草稿的人員",
-    "Draft_DraftIsProcessedByMe": "我正在處理的草稿",
-    "TimeZoneCode": "Time Zone Code"
+    "Draft_DraftIsProcessedByMe": "我正在處理的草稿"
   },
   "": {
     "CreatedBy": "Created By",

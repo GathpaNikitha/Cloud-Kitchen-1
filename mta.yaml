@@ -30,12 +30,18 @@ modules:
       url: ~{srv-url}
   - name: CloudKitchen-auth
   - name: CloudKitchen-dest
+    group: destinations
+    properties:
+      forwardAuthToken: false
+      name: ui5
+      url: https://ui5.sap.com
   parameters:
     buildpack: nodejs_buildpack
     disk-quota: 2048M
     keep-existing-routes: true
     memory: 256M
     stack: cflinuxfs4
+
 - name: CloudKitchen-postgres-deployer
   type: nodejs
   path: gen/pg
@@ -48,6 +54,7 @@ modules:
     tasks:
     - command: npm start
       name: deploy-to-postgresql
+
 - name: CloudKitchen-app-content
   type: com.sap.application.content
   path: .
@@ -59,10 +66,11 @@ modules:
     build-result: resources
     requires:
     - artifacts:
-      - comnikithannrgkitchen.zip
-      name: comnikithannrgkitchen
+      - comnikithannrgcloudappskitchen.zip
+      name: comnikithannrgcloudappskitchen
       target-path: resources/
-- name: comnikithannrgkitchen
+
+- name: comnikithannrgcloudappskitchen
   type: html5
   path: app/kitchen
   build-parameters:
@@ -72,12 +80,14 @@ modules:
     - npm install
     - npm run build:cf
     supported-platforms: []
+
 resources:
 - name: postgres
   type: org.cloudfoundry.managed-service
   parameters:
     service: postgresql-db
     service-plan: trial
+
 - name: CloudKitchen-auth
   type: org.cloudfoundry.managed-service
   parameters:
@@ -87,6 +97,7 @@ resources:
     path: ./xs-security.json
     service: xsuaa
     service-plan: application
+
 - name: CloudKitchen-dest
   type: org.cloudfoundry.managed-service
   parameters:
@@ -103,6 +114,7 @@ resources:
           existing_destinations_policy: update
     service: destination
     service-plan: lite
+    
 - name: CloudKitchen-repo-host
   type: org.cloudfoundry.managed-service
   parameters:
